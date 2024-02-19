@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/Images/logofav.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/Images/logofav.png" type="image/x-icon">
+    <title>My portfolio - Projects</title>
+
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            align-items: center;
+            background-color: rgb(234, 234, 234);
+            height: 100vh;
+            background-size: cover;
+            margin:0;
+            padding: 0;
+        }
+        header {
+            background-color: #706f6f;
+            color:orange;
+            text-align: center;
+            font-size: 20px;
+            padding: 1em 0;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 0.5em 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1em;
+            font-weight: bold;
+        }
+        nav a:hover{
+          color: #ff0000;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .gallery {
+            display:inline-block;
+            border: 2px solid rgb(255, 255, 255);
+            margin: 10px;
+            width: 200px;
+            height: 200px;
+            background-color: rgb(127, 234, 255);
+            cursor: pointer;
+            
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .project-info {
+            font-size: 18px;
+            color: rgb(0, 0, 0);
+            text-align: center;
+        }
+
+
+        /*the footer style */
+#footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+}
+
+#footer .icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#footer .icons ion-icon {
+  color: #ff4500;
+  font-size: 30px; 
+  transition: 0.4s ease;
+}
+#footer .icons ion-icon:hover{
+  color: rgb(14, 14, 14);
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.row {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.col-md-4 {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  box-sizing: border-box;
+  text-align: center;
+}
+.col-md-5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Additional styling for the CTA button */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #ff4500;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.btn:hover{
+  background-color: #0f0f0f;
+}
+    </style>
+</head>
+<body>
+
+  <header>
+    <h2>Here are the projects</h2>
+  </header>
+
+  <nav>
+    <a href="/index.html">Home</a>
+    <a href="/projects.html">Projects</a>
+    <a href="/contacts.html">Contact</a>
+  </nav>
+    
+    <div class="gallery">
+        <a target="_blank" href="/Images/work-4.jpg">
+            <img src="/Images/work-4.jpg" alt="work-4" width="360" height="270"/>
+        </a>
+        <div class="project-info">
+            <h3>Project 1</h3>
+            <p>A portfolio design.</p>
+        </div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="/Images/work-5.jpg" class="img-fancybox">
+            <img src="/Images/work-5.jpg" alt="work-5" width="360" height="270"/>
+        </a>
+        <div class="project-info">
+            <h3>Project 2</h3>
+            <p>An ecommerce website.</p>
+        </div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="/Images/work-6.jpg">
+            <img src="/Images/work-6.jpg" alt="work-6" width="720" height="540"/>
+        </a>
+        <div class="project-info">
+            <h3>Project 3</h3>
+            <p>A blog site.</p>
+        </div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="/Images/work-7.jpg" rel="lightbox[portfolio]">
+            <img src="/Images/work-7.jpg" alt="work-7"/>
+        </a>
+        <div class="project-info">
+            <h3>Project 4</h3>
+            <p>A instagram poster.</p>
+        </div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="/Images/work-8.png?raw=true">
+            <img src="/Images/work-8.png" alt="work-8"/>
+        </a>
+        <div class="project-info">
+            <h3>Project 5</h3>
+            <p>A Logo.</p>
+        </div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="/Images/work-9.png?raw=true">
+            <img src="/Images/work-9.png" alt="work-9"/>
+        </a>
+        <div class="project-info">
+            <h3>Project 6</h3>
+            <p>A text editing.</p>
+        </div>
+    </div>
+    <div class="gallery">
+        <a target="_blank" href="/Images/work-10.jpg" id="bigPic" >
+            <img src="/Images/work-10.jpg" alt="work-10"/>
+        </a>
+        <div class="project-info">
+            <h3>Project 7</h3>
+            <p>A poster design for nature.</p>
+        </div>
+    </div>
+    <div class="gallery">
+        <a target="_blank" href="/Images/work-11.png">
+            <img src="/Images/work-11.png" alt="work-11"/>
+        </a>
+        <div class="project-info">
+            <h3>Project 8</h3>
+            <p>A logo for a company.</p>
+        </div>
+    </div>
+    <div class="gallery">
+        <a target="_blank" href="/Images/work-12.jpg?raw=true">
+            <img src="/Images/work-12.jpg" alt="work-12"/>
+        </a>
+        <div class="project-info">
+            <h3>Project 9</h3>
+            <p>A business plan.</p>
+        </div>
+    </div>
+    <div class="gallery">
+        <a target="_blank" href="/Images/work-13.jpg">
+            <img src="/Images/work-13.jpg" alt="work-13"/>
+        </a>
+        <div class="project-info">
+            <h3>Project 10</h3>
+            <p>A template CV.</p>
+        </div>
+    </div>
+    <div class="gallery">
+        <a target="_blank" href="/Images/work-14.jpg">
+            <img src="/Images/work-14.jpg" alt="work-14"/>
+        </a>
+        <div class="project-info">
+            <h3>Project 11</h3>
+            <p>A portfolio desing for a company.</p>
+        </div>
+    </div>
+
+
+    <div  id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h3>Contact Us</h3>
+            <p>
+                Langata Park Avenue<br>
+                Langata, Nairobi, Kenya<br>
+                Tel: +254 794 642 560<br>
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h3>Social Media</h3><br>
+            <div class="icons">
+              <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+              <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+              <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+              <a href="#"><ion-icon name="logo-github"></ion-icon></a>
+            </div>
+          </div>
+          <!-- <div class="col-md-5">
+            <form action="" method="post" role="form" class="contactForm">
+              <legend>Subscribe to our newsletter!</legend>
+              <input type="text" placeholder="Your Name.." />
+              <input type="email" placeholder="Your Email.."/>
+              <button type="submit" class="btn btn-default submit">SUBSCRIBE</button>
+            </form>
+          </div> -->
+          <div class="col-md-6">
+            <h3>Call to Action</h3>
+            <a href="http://127.0.0.1/login%20page/register/register.php" class="btn btn-primary">Sign Up for Our Newsletter</a>
+          </div>
+        </div>
+        <br>
+        <div class="row copyright">
+          <div class="col-md-12">
+            <p>Copyright &copy; 2023 My portfolio</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>

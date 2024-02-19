@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link rel="shortcut icon" href="/Images/logofav.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/750b23c3d0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/Styles.css">
+</head>
+<body>
+  
+<!------------------------ the header -------------------------->
+    <header>
+       <div class="header">
+          <div class="container head1">
+            <nav>
+            <img src="Images/logo.png" class="logo" alt="Logo Image"/>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="/contacts.html">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="info">
+                <h3>Hi! I'm <span>Steven Kalegwa</span>.</h3>
+                <h1><span>GR</span>APHIC <span>D</span>ESIGNER</h1>
+                <p>I am a Graphic designer <br>with over 3 years of experience in the industry. My passion is to create <br> that are not only.</p>
+                <a href="#">Hire me</a>
+                <a href="/JS/Steven Kalegwa.pdf" download>Download CV</a>
+          </div>
+
+          <!-- <div class="image">
+                <img src="Images/steven.jpg" class="boy" alt="Steven Kalegwa">
+          </div> -->
+
+          <div class="icons">
+              <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+              <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+              <a href="https://twitter.com/home"><ion-icon name="logo-twitter"></ion-icon></a>
+              <a href="https://github.com/StevenKal23"><ion-icon name="logo-github"></ion-icon></a>
+            </div>
+          </div>
+        
+    </header>
+      
+<!--------------------------- ABout ME ----------------------------->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+          <!------col1 ------>
+          <div class="about-col-1">
+                  <img src="/Images/steven1.jpg" alt="">
+          </div>
+          <!------- col2 ------->
+          <div class="about-col-2">
+              <h1 class="subtitle">About Me</h1>
+              <p>Hello, I'm Steven Kalegwa, a passionate graphic designer with a keen eye for detail and a love for creative expression. I specialize in creating visually stunning and effective designs that leave a lasting impression.</p>
+              <p>With 5 years of experience in the design industry, I have had the opportunity to work on a diverse range of projects, including branding, print design, web design, and more. My goal is to not only meet but exceed the expectations of my clients by delivering designs that resonate with their audience.</p>
+              <p>My skills include (but are not limited to) graphic design, typography, color theory, and proficiency in industry-standard design software such as Adobe Creative Suite. I am always eager to learn and stay updated on the latest design trends to ensure my work remains fresh and innovative.</p>
+                
+              <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('Experiences')">Experiences</p>
+                <p class="tab-links" onclick="opentab('Achievements')">Achievements</p>
+              </div>
+
+              <div class="tab-contents active tab" id="skills">
+                <ul>
+                    <li>
+                        <p>Creativity</p>
+                        <div class="progress-bar">
+                            <div class="progress1"></div>
+                        </div>
+                        <span class="skill-percentage">76%</span>
+                    </li>
+
+                    <li>
+                        <p>Communication skills</p>
+                        <div class="progress-bar">
+                            <div class="progress2"></div>
+                        </div>
+                        <span class="skill-percentage">85%</span>
+                    </li>
+
+                    <li>
+                        <p>Software Proficiency</p>
+                        <div class="progress-bar">
+                            <div class="progress3"></div>
+                        </div>
+                        <span class="skill-percentage">75%</span>
+                    </li>
+
+                    <li>
+                        <p>Layout and Composition</p>
+                        <div class="progress-bar">
+                            <div class="progress4"></div>
+                        </div>
+                        <span class="skill-percentage">65%</span>
+                    </li>
+
+                    <li>
+                        <p>Problem-Solving Skills</p>
+                        <div class="progress-bar">
+                            <div class="progress5"></div>
+                        </div>
+                        <span class="skill-percentage">75%</span>
+                    </li>
+              </ul>
+              </div>
+              <div class="tab-contents" id="Experiences">
+                  <div class="timeline">
+                      <div class="event">
+                          <div class="year">2<span>00</span>3-2<span>00</span>6</div>
+                          <div class="category">Graphic Design</div>
+                          <div class="description">
+                            <p>I have responsibly led a team of 12 designers to help, supervise and approve their designs to make sure it matches client expectations and latest design standards.</p>
+                          </div>
+                      </div>
+                
+                      <div class="event">
+                        <div class="year">2<span>00</span>7-2<span>01</span>3</div>
+                        <div class="category">Photography</div>
+                        <div class="description">
+                          <p>I have responsibly led a team of 12 designers to help, supervise and approve their designs to make sure it matches client expectations and latest design standards.</p>
+                        </div>
+                      </div>
+                
+                      <div class="event">
+                        <div class="year">2<span>01</span>4-2<span>02</span>0</div>
+                        <div class="category">3D & Motion Design</div>
+                        <div class="description">
+                        <p>I have responsibly led a team of 12 designers to help, supervise and approve their designs to make sure it matches client expectations and latest design standards.</p>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="tab-contents" id="Achievements">
+                <div class="achievements">
+                  <ul>
+                      <li><b>Increased Brand Engagement Through Redesigned Marketing Collateral Achievement:</b><br> 
+                            Redesigned marketing materials, including brochures, social media graphics, and product packaging, resulting in a 30% increase in brand engagement.<br>
+                          <em>Details:</em>  Implemented a cohesive visual identity, enhanced the user experience, and maintained brand consistency across various platforms, leading to a measurable rise in audience interaction and customer interest.</li>
+                      <li><b>Optimized Website Conversion Rates with Visually Appealing UI/UX Design Achievement:</b><br>
+                            Overhauled website design, improving the user interface and experience, resulting in a 25% increase in conversion rates.<br>
+                          <em>Details:</em> Conducted user research, implemented intuitive navigation, and crafted visually appealing layouts to enhance the overall user experience. The optimized design contributed to a significant boost in website conversions and user satisfaction</li>
+                      <li><b>Award-Winning Logo Design Recognized by Industry Peers Achievement:</b><br>   
+                            Created a distinctive and memorable brand logo that received industry recognition, winning a prestigious design award.<br>
+                          <em>Details:</em> Conceptualized and executed a logo design that effectively conveyed the brand's values and uniqueness. The design not only resonated with the target audience but also earned accolades from design professionals, showcasing the designer's creative excellence and industry impact.</li>
+                          </ul>
+              </div>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  
+<!------------------- Projects ------------------------------>
+<div id="portfolio">
+  <div class="container">
+      <h1 class="subtitle">My Work</h1>
+      <div class="work-list">
+          <div class="work">
+              <img src="/images/work-1.png" alt="work-1"/>
+              <div class="layer">
+                  <h3>Project Name</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <a href="/projects.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+          </div>
+          <div class="work">
+              <img src="/images/work-2.png"  alt="work-2"/>
+              <div class="layer">
+                  <h3>Another Project Name</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <a href="/projects.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+          </div>
+          <div class="work">
+              <img src="/images/work-3.png" alt="work-3" class="last-work"/>
+              <div class="layer">
+                  <h3>Yet Another Project Name<span>(in progress)</span></h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, voluptas?</p>
+                  <a href="/projects.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+          </div>
+      </div>
+
+     <a href="/projects.html" class="btn"> See more</a> 
+
+  </div>
+</div>
+
+<!--------------------- the footer ---------------------------------->
+    <div  id="footer">
+        <div class="container1">
+          <div class="row">
+            <div class="col-md-3">
+              <h3>Contact Us</h3>
+              <p>
+                  Langata Park Avenue<br>
+                  Langata, Nairobi, Kenya<br>
+                  Tel: +254 794 642 560<br>
+              </p>
+            </div>
+            <div class="col-md-4">
+              <h3>Social Media</h3><br>
+              <div class="icons">
+                <a  href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href="https://github.com/"><ion-icon name="logo-github"></ion-icon></a>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <h3>Call to Action</h3>
+              <a href="/register.html" class="btn1 btn-primary">Sign Up for Our Newsletter</a>
+            </div>
+          </div>
+          <br>
+          <div class="row copyright">
+            <div class="col-md-12">
+              <p>Copyright &copy; 2023 My portfolio</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div id="scrollToTopBtn">&#9650;</div>
+    
+    <script src="/JS/scroll.js"></script>
+    
+    <script 
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js">  
+    </script>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+
+        function opentab(tabname) {
+          for (tablink of tablinks){
+            tablink.classList.remove("active-link"); 
+        }
+          for (tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    </script>
+
+</body>
+</html>

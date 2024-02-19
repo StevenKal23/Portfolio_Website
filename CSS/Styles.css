@@ -1,0 +1,534 @@
+/* the header style */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', serif;
+    box-sizing: border-box;
+}
+
+
+.header{
+    width:100%;
+    height:100vh;
+    background-image: url(/Images/backgroung.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.container {
+  padding: 10px 10%;
+}
+.head1 {
+  background: #333;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: 170px;
+}
+.boy {
+  width: 30%;
+  height: 50%;
+  border-radius: 50%;
+  float: right;
+  margin-right: 300px;
+  margin-bottom: 400px;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 40px 20px;
+}
+
+nav ul li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  background:#ff4500;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+.info  {
+    margin-left: 7%;
+    margin-top: 6%;
+    font-family: 'Times New Roman';
+
+}
+
+.info h1{
+    font-size: 65px;
+    line-height: 1.2em;
+    letter-spacing: 1px;
+    font-weight: bold;
+    opacity: 0.8;
+    margin-bottom: 10px;
+    
+}
+
+.info h3{
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    font-family: 'Times New Roman';
+}
+
+.info span{
+    color:#ff4500;
+}
+
+.info a{
+    text-decoration: none;
+    color: #000000;
+    border: 1px solid #ff4500;
+    margin: 26px 0;
+    padding: 10px 18px;
+    border-radius: 10px;
+    display: block;
+    cursor: pointer;
+    width: fit-content;
+    transition: background 0.5s;
+}
+
+.info a:hover{
+    background:#ff4500;
+}
+.icons a{
+  margin: 0 10px;
+  color: #ff4500;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.icons ion-icon{
+    margin-left: 7%;
+    color:#ff4500;
+    margin-right: -60px;
+    font-size: 40px;
+    transition: transform 0.5s;
+}
+   
+.icons ion-icon:hover{
+    color: rgb(0, 0, 0);
+    transform: translateY(-5px);
+}
+header {
+    background-image: url(/Images/background.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+/* ---------------work style-----------------*/
+#portfolio {
+  padding: 50px 0;
+}
+
+.work-list {
+  margin-top: 50px;
+  text-align: center;
+}
+.work {
+  align-items: center;
+  width: 400px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.work img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+}
+
+.layer  {
+  width: 100%;
+  height: 0;
+  background: linear-gradient(rgba(106, 106, 106, 0.6), #ff4500);
+  border-radius: 10px;
+  position: absolute;
+  color: white;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  font-size: 14px;
+  transition: height 0.5s;
+}
+.layer h3 {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.layer a {
+  margin-top: 20px;
+  color:#ff4500;
+  text-decoration: none;
+  font-size:18px;
+  line-height: 60px;
+  background: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+} 
+
+.work:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.work:hover .layer {
+  height: 100%;
+}
+.btn {
+  display: block;
+  margin: 70px auto;
+  width: fit-content;
+  border: 1px solid #ff4500;
+  padding: 14px 50px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: black;
+  transition: background 0.5s;
+  margin-left: 53%;
+}
+
+.btn:hover {
+  background:#ff4500;
+}
+  
+  /*-----------------------About----------------------------------*/
+  
+  #about {
+    padding: 80px 0;
+    background-color: #dbdbdb;
+  }
+  .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .about-col-1 {
+    flex-basis: 35%;
+  }
+  .about-col-1 img {
+    width: 100%;
+    border-radius: 15px;
+  } 
+  .about-col-2 {
+    flex-basis: 60%;
+  }
+  .subtitle {
+    color: #000000;
+    font-size: 60px;
+    font-weight:600;
+  }
+  .tab-titles {
+    display: flex;
+    margin: 20px 0 40px;
+  }
+  .tab-links {
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+  }
+  .tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background:orange;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+  }
+  .tab-links.active-link::after {
+    width: 50%;
+  }
+  .tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+  }
+  .tab-contents ul li span{
+    color: #ff4500;
+    font-size: 14px;
+  }
+  .tab-contents {
+    display: none;
+  }
+  .tab-contents.active-tab{
+    display: block;
+  }
+
+#skills {
+  font-size: 20px;
+}
+
+.progress1 {
+  width: 76%;
+}
+.progress2 {
+  width: 85%;
+}
+.progress3 {
+  width: 75%;
+}
+.progress4 {
+  width: 65%;
+}
+.progress5 {
+  width: 75%;
+}
+
+.skill {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px;
+}
+  
+.skill p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+  
+.progress-bar {
+    width: 70%;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    flex: 1;
+ }
+  
+.progress1, .progress2, .progress3, .progress4, .progress5 {
+    height: 100%;
+    border-radius: 5px;
+    background-color: #ff4500;
+}
+  
+.skill-percentage {
+    font-size: 16px;
+    color: #ff4500;
+    margin-left: 10px;
+}
+
+/*---------------the achievements-----------------------------------*/
+.achievements {
+  padding: 10px 0;
+  margin: 10px;
+  font-family: 'Times New Roman', Times, serif;
+  flex-direction: column;
+  /* float: right; */
+}
+
+.achievements h2 {
+  font-size: 36px;
+  color: orange;
+  text-align: center;
+}
+
+.achievements ul li b {
+  color:#ff4500;
+}
+
+.achievements ul {
+  margin: 10px;
+}
+
+.achievements li {
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+
+/*-------------------timeline and date-------------------*/
+.timeline {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  flex-direction: column;
+  text-align:left;
+  padding: 10px 0;
+  margin: 10px;
+}
+
+.event {
+  margin-bottom: 50px;
+  margin-left: 50px;
+  border-left:  5px solid #ff4500;
+  box-shadow: 1px solid #333;
+}
+.event span{
+  color: #ff4500;
+}
+
+.year {
+  font-size: 24px;
+  color: #000000;
+  font-weight: bold;
+  margin: 5px;
+}
+
+.category {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+  margin: 5px;
+}
+
+.description {
+  font-size: 16px;
+  color: #666;
+  margin: 5px;
+}
+  
+
+ 
+
+/*----------------------------- Footer ---------------------------*/
+
+#footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+}
+
+#footer .icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#footer .icons ion-icon {
+  color: #ff4500;
+  font-size: 30px; 
+  transition: 0.4s ease;
+}
+#footer .icons ion-icon:hover{
+  color: rgb(14, 14, 14);
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.row {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.col-md-4 {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  box-sizing: border-box;
+  text-align: center;
+}
+.col-md-5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* ---------Additional styling for the CTA button---------------- */
+.btn1 {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #ff4500;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.btn1:hover{
+  background-color: #000000;
+}
+
+/* Buttons */
+.btn1 {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff4500;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn1:hover {
+  background-color: #333;
+  cursor: pointer;
+}
+
+/* Ionicons Styles */
+ion-icon {
+  font-size: 20px;
+  padding: 20px;
+}
+
+/* Contact form styling */
+.contactForm {
+  text-decoration: none;
+}
+
+/* Scroll to top button */
+#scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  background-color: transparent;
+  color:#ff4500;
+  border: 1px solid #ff4500;
+  padding: 10px;
+  border-radius: 10%;
+}
+
+#scrollToTopBtn:hover {
+  background-color: #ff4500;
+  color:#f4f4f4
+}
+

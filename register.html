@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="CSS/register.css" />
+  <link rel="shortcut icon" href="/Images/logofav.png" type="image/x-icon">
+  
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <title>Registration</title>
+</head>
+<body>
+    <nav>
+      <a href="/index.html">Home</a>
+      <a href="/projects.html">Projects</a>
+      <a href="/contacts.html">Contact Us</a>
+    </nav>
+    <section class="Registration">
+        <div class="container">
+          <div class="row col-md-6 col-md-offset-3">
+            <div class="panel panel-primary">
+              <div class="panel-heading text-center">
+                <h1>Registration Form</h1>
+              </div>
+              <div class="panel-body">
+                <form name="submit-to-google-sheet" method="post">
+                  <div class="form-group">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" class="form-control" id="firstName" name="FirstName"/>
+                  </div>
+                  <div class="form-group">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" class="form-control" id="lastName" name="LastName"/>
+                  </div>
+                  <div class="form-group1">
+                    <label for="gender">Gender:</label>
+                    <div  class="radio">
+                      <label for="male" class="radio-inline">
+                        <input type="radio"  name="Gender" value="M"  id="male"/>Male</label >
+                      <label for="female" class="radio-inline">
+                        <input  type="radio"  name="Gender" value="F"  id="female"/>Female</label>
+                      <label for="others" class="radio-inline">
+                        <input  type="radio"  name="Gender"  value="O"  id="others"/>Others</label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="email"
+                      name="Email"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" class="form-control" id="password" name="Password"/>
+                  </div>
+                  <div class="form-group">
+                    <label for="number">Phone Number</label>
+                    <input type="number"  class="form-control"  id="number"  name="Number"/>
+                  </div>
+                  <input type="submit" class="btn btn-primary" />
+                </form>
+                <span id="msg"></span>
+              </div>
+              <div class="panel-footer text-right">
+                <small>&copy; Steven Kalegwa</small>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbxepzlL68aGuHFBdCQPKtqR3u-ikhlCjl71Cl1GY1Zs9ruQWyuDjoCTjHPyL72rc_zALw/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const msg = document.getElementById('msg')
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response =>{
+                msg.innerHTML = "Message sent successfully! Thank you!"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 3000)
+                form.reset()
+            })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+  </body>
+</html>
